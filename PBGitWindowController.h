@@ -51,4 +51,6 @@
 - (IBAction) openInTerminal:(id)sender;
 - (IBAction) cloneTo:(id)sender;
 - (IBAction) refresh:(id)sender;
+- (IBAction) rebaseTest:(id)sender;
+
 @end

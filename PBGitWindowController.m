@@ -14,6 +14,7 @@
 #import "PBCloneRepsitoryToSheet.h"
 #import "PBGitSidebarController.h"
 #import "NSString_Truncate.h"
+#import "RebaseController.h"
 
 @implementation PBGitWindowController
 
@@ -203,6 +204,12 @@
 	}
 
 	[super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+}
+
+- (IBAction) rebaseTest:(id)sender {
+    RebaseController* ctrlr = [RebaseController alloc];
+    [NSBundle loadNibNamed:@"RebaseWindow" owner:ctrlr]; 
+    printf("Hello World\n");
 }
 
 
