@@ -1,8 +1,21 @@
 build
 build/revision
+
+# XCode
 *.xcodeproj/*.pbxuser
 *.xcodeproj/*.perspectivev3
 *.xcodeproj/*.mode1v3
 *.xcodeproj/*.tm_build_errors
+project.xcworkspace/
+xcuserdata/
+
 *.tmproj
 Nightly.app.zip
+
+# OSX
+.DS_Store
+
+# vim
+.*.sw?
+
+# XCode4 stuff
