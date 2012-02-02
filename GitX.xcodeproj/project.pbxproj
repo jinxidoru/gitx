@@ -48,6 +48,8 @@
 		770B37ED0679A11B001EADE2 /* GitTest_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 770B37EC0679A11B001EADE2 /* GitTest_DataModel.xcdatamodel */; };
 		773F8E7A14DB51CF00144248 /* PBGitSidebarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58DB55F10566E3900CFDF4A /* PBGitSidebarView.xib */; };
 		77C8280E06725ACE000B614F /* ApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C8280C06725ACE000B614F /* ApplicationController.m */; };
+		77DBB2E314DB43CD006AEA38 /* RebaseWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77DBB2E214DB43CD006AEA38 /* RebaseWindow.xib */; };
+		77DBB2EA14DB4AD0006AEA38 /* RebaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DBB2E914DB4AD0006AEA38 /* RebaseController.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -269,6 +271,9 @@
 		77C82804067257F0000B614F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		77C8280B06725ACE000B614F /* ApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationController.h; sourceTree = "<group>"; };
 		77C8280C06725ACE000B614F /* ApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationController.m; sourceTree = "<group>"; };
+		77DBB2E214DB43CD006AEA38 /* RebaseWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RebaseWindow.xib; sourceTree = "<group>"; };
+		77DBB2E814DB4AD0006AEA38 /* RebaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RebaseController.h; sourceTree = "<group>"; };
+		77DBB2E914DB4AD0006AEA38 /* RebaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RebaseController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* GitX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		911111E10E58BD5A00BF76B4 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/RepositoryWindow.xib; sourceTree = "<group>"; };
@@ -595,6 +600,7 @@
 				47DBDB680E94EF6500671A1E /* Preferences.xib */,
 				F569AE920F2CBD7C00C2FFA7 /* Credits.html */,
 				F58DB55F10566E3900CFDF4A /* PBGitSidebarView.xib */,
+				77DBB2E214DB43CD006AEA38 /* RebaseWindow.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -791,6 +797,8 @@
 				47DBDB570E94EDE700671A1E /* DBPrefsWindowController.m */,
 				47DBDB650E94EE8B00671A1E /* PBPrefsWindowController.h */,
 				47DBDB660E94EE8B00671A1E /* PBPrefsWindowController.m */,
+				77DBB2E814DB4AD0006AEA38 /* RebaseController.h */,
+				77DBB2E914DB4AD0006AEA38 /* RebaseController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1092,6 +1100,9 @@
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* GitTest */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1156,6 +1167,7 @@
 				65604690115BF80F0021E246 /* Debug.xcconfig in Resources */,
 				656F3B0B115C042D00CA816E /* Common.xcconfig in Resources */,
 				6501ABC1115C064A00171062 /* Release.xcconfig in Resources */,
+				77DBB2E314DB43CD006AEA38 /* RebaseWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1336,6 +1348,7 @@
 				F5E424180EA3E4EB0046E362 /* PBWebDiffController.m in Sources */,
 				F565262B0E03D89B00F03B52 /* PBWebHistoryController.m in Sources */,
 				F5140DC90E8A8EB20091E9F3 /* RoundedRectangle.m in Sources */,
+				77DBB2EA14DB4AD0006AEA38 /* RebaseController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
